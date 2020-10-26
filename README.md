@@ -29,4 +29,4 @@ Django, DRF, React, PostgreSQL, Redis, RabbitMQ, Celery, Gunicorn, NGINX
 
 ## Diagram
 
-![diagram](media/diagram)
+![diagram](media/diagram.jpg)
