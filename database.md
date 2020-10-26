@@ -6,24 +6,26 @@ We will use PostgreSQL as our database server.
 ```
 id, email, phone, password, user_type(customer/manager), last_login, created_at, updated_at
 ```
->note : this table will be used for authentication
+> note : this table will be used for authentication
 
 #### customers :
 ```
 id, user_id, address, created_at, updated_at
 ```
+> note : customer profile
 
 #### managers :
 ```
 id, user_id, address, created_at, updated_at
 ```
+> note : restaurant manager profile
 
 #### restaurants :
 ```
 id, name, desc, image, address, lat, lon, created_at, updated_at
 ```
 
-#### restaurants_manger :
+#### restaurant_mangers :
 ```
 id, user_id, restaurant_id, created_at, updated_at
 ```
