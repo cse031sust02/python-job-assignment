@@ -34,11 +34,11 @@ Django, DRF, React, PostgreSQL, Redis, RabbitMQ, Celery, Gunicorn, NGINX
 
 > Note : This is a simple architecture I can think of now. It can be changed after discussion with the team or know more details about the requirement. For example, I would like to go with a microservice based architecture but I am not sure about the development team size and if they are familiar with microservice architecture or not.
 
-## Database Design
+# Database Design
 
 Please go to the [database design](database.md) page.
 
-## Development Plan
+# Development Plan
 
 - We will first have discussion with the developers to finalize our architecture, database design and API Endpoints.
 
