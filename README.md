@@ -1,5 +1,5 @@
 # Overview :
----
+
 ## Main Website 
 url : www.​lazy-foodies​.com
 
@@ -15,7 +15,6 @@ This Mobile APP is for the deliver boys where they can login and view the orders
 
 
 # Architecture
----
 
 ## Tech Stack 
 Django, DRF, React, PostgreSQL, Redis, RabbitMQ, Celery, Gunicorn, NGINX
