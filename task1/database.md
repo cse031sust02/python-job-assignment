@@ -1,6 +1,6 @@
 ## Database Design
 
-We will use PostgreSQL as our database server.
+We will use PostgreSQL as our database server. We will also use the PostGIS extension to query the nearest restaurants od a customer.
 
 #### users :
 ```
@@ -20,6 +20,12 @@ id, user_id, address, created_at, updated_at
 ```
 > note : restaurant manager profile
 
+#### delivery_boys :
+```
+id, user_id, address, created_at, updated_at
+```
+> note : delivery boy profile
+
 #### restaurants :
 ```
 id, name, desc, image, address, lat, lon, created_at, updated_at
@@ -30,6 +36,11 @@ id, name, desc, image, address, lat, lon, created_at, updated_at
 id, user_id, restaurant_id, created_at, updated_at
 ```
 > note : I am assuming that one restaurant will have multiple managers.
+
+#### restaurant_delivery_boys :
+```
+id, user_id, restaurant_id, created_at, updated_at
+```
 
 #### commission :
 ```
@@ -53,7 +64,7 @@ id, restaurant_id, food_category_id, title, description, image, created_at, upda
 
 #### orders :
 ```
-id, customer_id, restaurant_id, total_price, discount_id, discount_amount, final_price, current_status(ordered/ready/delivered/rejected), delivery_address, created_at, updated_at
+id, customer_id, restaurant_id, total_price, discount_id, discount_amount, final_price, current_status(ordered/ready/delivered/rejected), delivery_boy_id, delivery_address, created_at, updated_at
 ```
 > note : final_price = total_price - discount_amount
 

@@ -42,7 +42,7 @@ Please go to the [database design](database.md) page.
 
 - We will first have discussion with the developers to finalize our architecture, database design and API Endpoints.
 
-- We will the finalize the tools/platforms we will use for the project. For example, set a [Git Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows) for the development, API development Platform( i.e., [Swagger](https://swagger.io/) or [Postman](https://www.postman.com/)), monitoring platform (such as [sentry](https://sentry.io/)) and testing strategies etc
+- We will the finalize the tools/platforms we will use for the project. For example, set a [Git Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows) for the development, API development Platform(i.e., [Swagger](https://swagger.io/) or [Postman](https://www.postman.com/)), monitoring platform (such as [sentry](https://sentry.io/)) and testing strategies etc
 
 - Then two teams will start work in parallel : the frontend team and the backend team.
 
