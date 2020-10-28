@@ -14,7 +14,7 @@ SECRET_KEY = 'h66s9uwf-t#%cln^bytl2cbsir@a553_uh!#_^@j058etq1r+$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -26,6 +26,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Third Party
+    'celery_progress',
 
     # My Apps
     'progress_demo.apps.ProgressDemoConfig'
@@ -116,6 +119,7 @@ STATIC_URL = '/static/'
 # https://docs.celeryproject.org/en/stable/django/first-steps-with-django.html#using-celery-with-django
 
 CELERY_BROKER_URL = os.environ['CELERY_BROKER_URL'],
+CELERY_RESULT_BACKEND = os.environ['CELERY_RESULT_BACKEND'],
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'

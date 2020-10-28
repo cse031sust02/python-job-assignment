@@ -6,6 +6,7 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     environment:
       - CELERY_BROKER_URL=amqp://user:password@broker:5672
+      - CELERY_RESULT_BACKEND=rpc://
     ports:
       - "8000:8000"
     depends_on:
@@ -16,6 +17,7 @@ services:
     command: celery -A idare worker -B -l INFO
     environment:
       - CELERY_BROKER_URL=amqp://user:password@broker:5672
+      - CELERY_RESULT_BACKEND=rpc://
     depends_on:
       - broker
 
