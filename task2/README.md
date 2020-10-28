@@ -1,3 +1,5 @@
+## How to run
+
 - clone the repository
 ```bash
 pc:~$ git clone https://github.com/cse031sust02/idare-task.git
