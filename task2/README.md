@@ -2,7 +2,7 @@
 
 - clone the repository
 ```bash
-pc:~$ git clone https://github.com/cse031sust02/idare-task.git
+pc:~$ git clone https://github.com/cse031sust02/python-job-assignment.git
 ```
 
 - enter directory named task2
