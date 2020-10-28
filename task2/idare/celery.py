@@ -28,13 +28,8 @@ def task_2():
     return
 
 
-app.conf.beat_schedule = {
-    'task 1': {
-        'task': 'task_1.s',
-        'schedule': 1
-    },
-    'task 2': {
-        'task': 'task_2.s',
-        'schedule': 1
-    },
-}
+@app.on_after_configure.connect
+def setup_periodic_tasks(sender, **kwargs):
+    # run in every second
+    sender.add_periodic_task(1.0, task_1.s(), name='task 1')
+    sender.add_periodic_task(1.0, task_2.s(), name='task 2')
