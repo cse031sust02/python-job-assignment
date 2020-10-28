@@ -32,7 +32,7 @@ Django, DRF, React, PostgreSQL, Redis, RabbitMQ, Celery, Gunicorn, NGINX
 
 ![diagram](media/diagram.jpg)
 
-> Note : This is a simple architecture I can think of now. It can be changed after discussion with the team or know more details about the requirement. For example, I would like to go with a microservice based architecture but I am not sure about the development team size and if they are familiar with microservice architecture or not.
+> Note : This is a simple architecture I can think of now. It can be changed after discussion with the team or know more details about the requirement. For example, I would like to go with a microservice based architecture. But I am not sure about the development team size and also if they are familiar with microservice architecture or not.
 
 # Database Design
 
@@ -40,17 +40,18 @@ Please go to the [database design](database.md) page.
 
 # Development Plan
 
-- We will first have discussion with the developers to finalize our architecture, database design and API Endpoints.
+- We will first have discussion with the developers to finalize our architecture, database design and API Endpoints etc
 
-- We will the finalize the tools/platforms we will use for the project. For example, set a [Git Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows) for the development, API development Platform(i.e., [Swagger](https://swagger.io/) or [Postman](https://www.postman.com/)), monitoring platform (such as [sentry](https://sentry.io/)) and testing strategies etc
+- We will then finalize the tools/platforms we will use for the project. For example, set a [Git Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows) for the development, API development Platform(i.e., [Swagger](https://swagger.io/) or [Postman](https://www.postman.com/)), monitoring platform (such as [sentry](https://sentry.io/)) and testing strategies etc
 
 - Then two teams will start work in parallel : the frontend team and the backend team.
 
-- The frontend team will first complete the designs for the website pages and approve the UI/UX from the client/stakeholder.
+- The frontend team will first try to complete the designs for the website pages and approve the UI/UX from the client/stakeholder.
 
 - Once the desings are approved, the frontend team can start working on making the pages dynamic. As the backend work may not be completed by that time yet, we will create mock APIs so that frontend team can use those APIs to get data from the API requests.
 
-- When the backend work for the API is complete, the frontend team will just replace the base-url from the mock API to the real API. 
+- When the backend work for the API is complete, the frontend team will just replace the base-url from the mock API to the real API.
 
 In this way, we can complete the work fast in asynchronous way.
 
+> Note : did not mention the Q/A and DevOPs part here. As it will depend on the size and resources of those teams.
