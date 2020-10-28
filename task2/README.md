@@ -7,12 +7,12 @@ pc:~$ git clone https://github.com/cse031sust02/python-job-assignment.git
 
 - enter directory named task2
 ```bash
-pc:~$ cd task2
+pc:~python-job-assignment/$ cd task2
 ```
 
 - run docker compose
 ```bash
-pc:~/task2$ docker-compose up
+pc:~python-job-assignment/task2$ docker-compose up
 ```
 
 - view the output on the console
