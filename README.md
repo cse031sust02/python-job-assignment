@@ -9,7 +9,7 @@ To achieve the requirement, what is your step? As a lead what is your plan? Plea
 #### 1) Write a Django app with celery that will run two iterative tasks task_1(), task_2() and they will sleep for 2 and 3 seconds respectively. These tasks will run in every second.
 - Hints: Use celery and Rabbitmq to run the tasks.
 
-> The source code is avialable in [task2](/task2) folder. Main work for this assignment is in this [file](task2/idare/settings.py)
+> The source code is avialable in [task2](/task2) folder. Main work for this assignment is in this [file](task2/idare/celery.py)
 
 #### 2) Use docker to run the above application.
 
